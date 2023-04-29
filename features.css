@@ -2,7 +2,7 @@ html{
     font-size: 62.5%;
 }
 .top-section{
-    height: 69.4rem;
+    max-height: 85rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@ html{
     color: #FFFFFF;
 }
 .top-section p{
-    max-width: 38.7rem;
+    max-width: 45rem;
     margin-top: 1.6rem;
     font-family: 'DM Sans';
     font-style: normal;
@@ -122,7 +122,7 @@ html{
 .bottom-section button{
     width: 22rem;
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: center;
     border: 0;
     background-color: inherit;
@@ -150,6 +150,9 @@ button{
     cursor: pointer;
 }
 @media (min-width:768px){
+    #nmenu{
+        display: none;
+    }
     .top-section img{
         display: none;
     }
@@ -168,6 +171,7 @@ button{
     .main-section{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
 
     }
     .main-section :nth-child(1){
@@ -179,6 +183,7 @@ button{
         padding: 0;
         display: flex;
         align-items: center;
+        justify-content: space-around;
     }
     .bottom-section h1{
         width: 40rem;
@@ -187,10 +192,8 @@ button{
     }
     .bottom-section button{
         width: 20rem;
-    }
-    .top-section h1{
-        font-size: 40px;
-        line-height: 48px;
+        align-items: center;
+        text-align: center;
     }
 }
 @media (min-width:1440px){
