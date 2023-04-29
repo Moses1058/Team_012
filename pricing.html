@@ -3,74 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="header_footer.css">
+  <link rel="stylesheet" href="pricing.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
 <body>
-
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Pricing
-
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
-
-  Monthly
-  Yearly
-
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
-
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
-
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
-
-  The Features
-
-  Basic
-  Pro
-  Business
-
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
-
-  We're in Beta. Get your invite today!
+  <header>
+    <img src="assets/shared/desktop/logo.svg" id="logo">
+    <a href="index.html" class="list">Home</a>
+    <a href="stories.html" class="list">Stories</a>
+    <a href="pricing.html" class="list">Pricing</a>
+    <button class="top-btn">Get an invite</button>
+    <img src="assets/shared/mobile/menu.svg" class="menu nav" id="nmenu" style="display: block;" onclick="navbar() ">
+    <img src="assets/shared/mobile/close.svg" class="close nav" id="nclose" onclick="navbar()">
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="stories.html" >Stories</a>
+    <a href="features.html">Features</a>
+    <button>Get an invite</button>
+  </nav>
   
-  Get an invite
+  <section class="top-section">
+    <img src="assets/pricing/mobile/hero.jpg" alt="">
+    <div class="card-priciing">
+      <h1>Pricing</h1>
+      <p>Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
+      It’s the simple way to create and share your photos.</p>
+    </div>
+    
+  </section>
+  
+  <section class="main-section">
 
-  Home
-  Stories
-  Features
-  Pricing
+    <div class="selection">
+      <h3 id="month">Monthly</h3>
+      <div id="slide-box">
+        <span id="slider"></span>
+      </div>
+      <h3 id="year">Yearly</h3>
+    </div>
 
-  Get an invite
+    <div class="price-card">
+      <h2>Basic</h2>
+      <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+      <h4>$ <span class="price" id="price-basic">19.00</span></h4>
+      <p id="per">per month</p>
+      <button>pick plan</button>
+    </div>
+    <div class="price-card">
+      <h2>Pro</h2>
+      <p>More advanced features available. Recommended for photography veterans and professionals.</p>
+      <h4>$ <span class="price" id="price-pro">39.00</span></h4>
+      <p id="per">per month</p>
+      <button>pick plan</button>
+    </div>
+    <div class="price-card">
+      <h2>Business</h2>
+      <p>Additional features available such as more detailed metrics. Recommended for business owners.</p>
+      <h4>$ <span class="price" id="price-business">99.00</span></h4>
+      <p id="per">per month</p>
+      <button>pick plan</button>
+    </div>
+    <div class="info">
+      <h2>The Features</h2>
+      <hr>
+      <div>
+        <h3>Unlimited Story Posting</h3>
+        <div>
+          <p>Basic</p><p>Pro</p><p>Business</p>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <h3>Unlimited Photo Upload</h3>
+        <div>
+          <p>Basic</p><p>Pro</p><p>Business</p>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <h3>Embedding Custom Content</h3>
+        <div>
+          <p>Basic</p><p>Pro</p><p>Business</p>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <h3>Customize Metadata</h3>
+        <div>
+          <p>Basic</p><p>Pro</p><p>Business</p>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <h3>Advanced Metrics</h3>
+        <div>
+          <p>Basic</p><p>Pro</p><p>Business</p>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <h3>Photo Downloads</h3>
+        <div>
+          <p>Basic</p><p>Pro</p><p>Business</p>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <h3>Search Engine Indexing</h3>
+        <div>
+          <p>Basic</p><p>Pro</p><p>Business</p>
+        </div>
+        <hr>
+      </div>
+      <div>
+        <h3>Custom Analytics</h3>
+        <div>
+          <p>Basic</p><p>Pro</p><p>Business</p>
+        </div>
+        <hr>
+      </div>     
+    </div>
+  </section>
 
-  Copyright 2019. All Rights Reserved
+  <section class="bottom-section">
+    <h1>We're in Beta. Get your invite today!</h1>
+    <button><h3>Get an invite</h3>  <img src="assets/shared/desktop/arrow.svg" alt="" id="arrow"></button>
+  </section>
 
+  <footer>
+    <div class="top-footer">
+      <img src="assets/shared/desktop/white_logo.svg" alt="" id="logo-f">
+    <div class="comunity">
+      <img src="assets/shared/desktop/facebook.svg" alt="">
+      <img src="assets/shared/desktop/youtube.svg" alt="">
+      <img src="assets/shared/desktop/twitter.svg" alt="">
+      <img src="assets/shared/desktop/pinterest.svg" alt="">
+      <img src="assets/shared/desktop/instagram.svg" alt="">
+    </div>
+
+    <div class="pages">
+      <a href="index.html">Home</a>
+      <a href="stories.html" >Stories</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html" >Pricing</a>
+    </div>
+  </div>
+  
+  <div class="bot-footer">
+    <button><h3>Get an invite</h3> <img src="assets/shared/desktop/arrow.svg" alt="" id="arrow"></button>
+    <p>Copyright 2019. All Rights Reserved</p>
+  </div>
+  </footer>
+    
+<script src="main.js"></script>
+<script src="Pricing.js"></script>
 </body>
 </html>
