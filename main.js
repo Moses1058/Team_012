@@ -4,14 +4,14 @@ const nav = document.getElementsByTagName('nav');
 
 function navbar(){
 
-    if(menu.style.display == "block"){
-        menu.style.display = "none";
+    if(menu.style.visibility == "visible"){
+        menu.style.visibility = "hidden";
         close.style.display = "block";
         nav[0].style.display = "flex";
     } 
 
     else {
-        menu.style.display = "block";
+        menu.style.visibility = "visible";
         close.style.display = "none";
         nav[0].style.display = "none";;
     }  
