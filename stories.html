@@ -3,124 +3,261 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="header_footer.css">
+  <link rel="stylesheet" href="Features.css">
+  <link rel="stylesheet" href="stories.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
 <body>
+  <header>
+    <img src="assets/shared/desktop/logo.svg" id="logo">
+    <a href="index.html" class="list">Home</a>
+    <a href="stories.html" class="list">Stories</a>
+    <a href="pricing.html" class="list">Pricing</a>
+    <button class="top-btn">Get an invite</button>
+    <img src="assets/shared/mobile/menu.svg" class="menu nav" id="nmenu" style="display: block;" onclick="navbar() ">
+    <img src="assets/shared/mobile/close.svg" class="close nav" id="nclose" onclick="navbar()">
+  </header>
 
-  Stories
-  Features
-  Pricing
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html" >Pricing</a>
+    <button>Get an invite</button>
+  </nav>
 
-  Get an invite
 
-  Last month's featured story
 
-  Hazy full moon of Appalachia
-  March 2nd 2020
-  by John Appleseed
+  <main>
+    <div class="top">
+    </div>
 
-  The dissected plateau area, while not actually made up of geological mountains, 
-  is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
-  and while the ridges are not high, the terrain is extremely rugged.
+    <div class="black_div">
+      <h5>LAST MONTH’S FEATURED STORY</h5>
+      <h1>HAZY FULL MOON OF APPALACHIA</h1>
+      <h4><span>March 2nd 2020</span>by John Appleseed</h4>
+      <p>The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.</p>
+      <div class="read_story">
+        <h3>READ THE STORY</h3>
+        <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+      </div>
+    </div>
+    <div class="section_0">
+      <!-- section_1 --><!-- section_1 --><!-- section_1 --><!-- section_1 -->
+      <div class="section_1">
+        <div id="Mountains" class="box">
+          <h2>April 16th 2020</h2>
+          <h1>The Mountains</h1>
+          <h2>by John Appleseed</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
+        <div id="Cityscapes" class="box">
+          <h2>April 14th 2020</h2>
+          <h1>Sunset Cityscapes</h1>
+          <h2>by Benjamin Cruz</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
+        <div id="Voyage" class="box">
+          <h2>April 11th 2020</h2>
+          <h1>18 Days Voyage</h1>
+          <h2>by Alexei Borodin</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
+        <div id="Architecturals" class="box">
+          <h2>April 9th 2020</h2>
+          <h1>Architecturals</h1>
+          <h2>by Samantha Brooke</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
+      </div>
+      <!-- section_2 --><!-- section_2 --><!-- section_2 --><!-- section_2 -->
+      <div class="section_2">
+        <div id="World_Tour" class="box">
+          <h2>April 7th 2020</h2>
+          <h1>World Tour 2019</h1>
+          <h2>by Timothy Wagner</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
 
-  Read the story
+        <div id="Unforeseen_Corners" class="box">
+          <h2>April 3rd 2020</h2>
+          <h1>Unforeseen Corners</h1>
+          <h2>by William Malcolm</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
 
-  April 16th 2020
-  The Mountains
-  by John Appleseed
-  Read Story
+        <div id="Lion" class="box">
+          <h2>March 29th 2020</h2>
+          <h1>King on Africa: Part II</h1>
+          <h2>by Tim Hillenburg</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
 
-  April 14th 2020
-  Sunset Cityscapes
-  by Benjamin Cruz
-  Read Story
+        <div id="Trip" class="box">
+          <h2>March 21st 2020</h2>
+          <h1>The Trip to Nowhere</h1>
+          <h2>by Felicia Rourke</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
+      </div>
+      <!-- section_3 --><!-- section_3 --><!-- section_3 --><!-- section_3 -->
+      <div class="section_3">
+        <div id="rage-of-the-sea" class="box">
+          <h2>March 19th 2020</h2>
+          <h1>Rage of The Sea</h1>
+          <h2>by Mohammed Abdul</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
 
-  April 11th 2020
-  18 Days Voyage
-  by Alexei Borodin
-  Read Story
+        <div id="running-free" class="box">
+          <h2>March 16th 2020</h2>
+          <h1>Running Free</h1>
+          <h2>by Michelle</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
 
-  April 9th 2020
-  Architecturals
-  by Samantha Brooke
-  Read Story
+        <div id="behind-the-waves" class="box">
+          <h2>March 11th 2020</h2>
+          <h1>Behind the Waves</h1>
+          <h2>by Lamarr Wilson</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
 
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
+        <div id="calm-waters" class="box">
+          <h2>March 9th 2020</h2>
+          <h1>Calm Waters</h1>
+          <h2>by Samantha Brooke</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
+      </div>
+      <!-- section_4 --><!-- section_4 --><!-- section_4 --><!-- section_4 -->
+      <div class="section_4">
+        <div id="milky-way" class="box">
+          <h2>March 5th 2020</h2>
+          <h1>The Milky Way</h1>
+          <h2>by Benjamin Cruz</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
 
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
+        <div id="dark-forest" class="box">
+          <h2>March 4th 2020</h2>
+          <h1>Night at The Dark Forest</h1>
+          <h2>by  Mohammed Abdul</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
 
-  April 3rd 2020
-  Unforeseen Corners
-  by William Malcolm
-  Read Story
+        <div id="somwarpet" class="box">
+          <h2>March 1st 2020</h2>
+          <h1>Somwarpet’s Beauty</h1>
+          <h2>by Michelle</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
 
-  March 29th 2020
-  King on Africa: Part II
-  by Tim Hillenburg
-  Read Story
+        <div id="land-of-dreams" class="box">
+          <h2>February 25th 2020</h2>
+          <h1>Land of Dreams</h1>
+          <h2>by William Malcolm</h2>
+          <hr class="line">
+          <div class="read_story2">
+            <h3>READ THE STORY</h3>
+            <img src="./assets/shared/desktop/arrow.svg" alt="arrow_photo">
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="top-footer">
+      <img src="assets/shared/desktop/white_logo.svg" alt="" id="logo-f">
+    <div class="comunity">
+      <img src="assets/shared/desktop/facebook.svg" alt="">
+      <img src="assets/shared/desktop/youtube.svg" alt="">
+      <img src="assets/shared/desktop/twitter.svg" alt="">
+      <img src="assets/shared/desktop/pinterest.svg" alt="">
+      <img src="assets/shared/desktop/instagram.svg" alt="">
+    </div>
 
-  March 21st 2020
-  The Trip to Nowhere
-  by Felicia Rourke
-  Read Story
+    <div class="pages">
+      <a href="index.html">Home</a>
+      <a href="stories.html" >Stories</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html" >Pricing</a>
+    </div>
+  </div>
+  
+  <div class="bot-footer">
+    <button><h3>Get an invite</h3> <img src="assets/shared/desktop/arrow.svg" alt="" id="arrow"></button>
+    <p>Copyright 2019. All Rights Reserved</p>
+  </div>
+  </footer>
 
-  March 19th 2020
-  Rage of The Sea
-  by Mohammed Abdul
-  Read Story
-
-  March 16th 2020
-  Running Free
-  by Michelle
-  Read Story
-
-  March 11th 2020
-  Behind the Waves
-  by Lamarr Wilson
-  Read Story
-
-  March 9th 2020
-  Calm Waters
-  by Samantha Brooke
-  Read Story
-
-  March 5th 2020
-  The Milky Way
-  by Benjamin Cruz
-  Read Story
-
-  March 4th 2020
-  Night at The Dark Forest
-  by  Mohammed Abdul
-  Read Story
-
-  March 1st 2020
-  Somwarpet’s Beauty
-  by Michelle
-  Read Story
-
-  February 25th 2020
-  Land of Dreams
-  by William Malcolm
-  Read Story
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
-
+<script src="main.js"></script>
 </body>
 </html>
