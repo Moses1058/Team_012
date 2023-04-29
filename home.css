@@ -1,0 +1,247 @@
+html {
+  font-size: 62.5%;
+  /* To make REM unit easier  */
+}
+body {
+  font-family: "DM Sans";
+  color: #ffffff;
+  font-weight: 400;
+}
+main img {
+  display: block;
+  width: 100%;
+}
+/* Mobile first */
+/* This pictures we need lately in media querry */
+.tablet,
+.dekstop {
+  display: none;
+}
+
+.text {
+  background-color: #000000;
+  padding: 7.2rem 2.4rem 7.2rem 3.3rem;
+  position: relative;
+}
+
+/* This is a little colorfull line on the top of .text */
+.line {
+  width: 12.8rem;
+  height: 0.6rem;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  position: absolute;
+  top: 0;
+}
+main h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+main p {
+  font-size: 1.5rem;
+}
+.firstp {
+  opacity: 0.6;
+  padding: 1.6rem 0 2.3rem;
+}
+
+.arrow-p {
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0;
+  font-size: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.arrow {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.white {
+  background-color: white;
+  color: #000000;
+}
+
+.second {
+  color: #000000;
+}
+
+.mountains {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    ),
+    url("./assets/stories/desktop/mountains.jpg");
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.name p {
+  font-size: 1.3rem;
+}
+
+.card hr {
+  height: 0.1rem;
+  opacity: 0.25;
+  background: #ffffff;
+}
+.read-story {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sunset {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    ),
+    url("./assets/stories/desktop/cityscapes.jpg");
+}
+.days {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    ),
+    url("./assets/stories/mobile/18-days-voyage.jpg");
+}
+.archi {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    ),
+    url("./assets/stories/mobile/architecturals.jpg");
+}
+.description {
+  color: #000000;
+  margin: 8rem 3rem;
+}
+.description h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 5rem 0 1.6rem;
+}
+.description p {
+  opacity: 0.6;
+  font-size: 1.5rem;
+}
+.resp {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.dscr p {
+  padding-bottom: 5.6rem;
+}
+.card {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 23.6rem 3.2rem 4rem;
+}
+
+/* Tablet dimensions */
+@media only screen and (min-width: 768px) {
+  .img1 {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .box {
+    display: flex;
+    max-height: 800px;
+  }
+  .text {
+    padding: 15.3rem 5.4rem;
+    flex-grow: 2;
+    flex-basis: 0;
+  }
+  .tablet {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .text h1 {
+    font-size: 4rem;
+    width: 35rem;
+  }
+  .firstp {
+    width: 40rem;
+  }
+  .line {
+    width: 0.6rem;
+    height: 30.4rem;
+    left: 0;
+    top: 26%;
+  }
+  .four-image {
+    display: grid;
+    /* grid is good choise to put divs in order */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .dscr p {
+    padding-bottom: 8rem;
+  }
+}
+
+/* Dekstop dimensions */
+@media only screen and (min-width: 1440px) {
+  .tablet {
+    display: none;
+  }
+  .dekstop {
+    display: block;
+  }
+  .four-image {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .description {
+    display: flex;
+    padding: 12rem 16.5rem;
+    align-items: center;
+  }
+  .card:hover {
+    cursor: pointer;
+    transform: translateY(-1.6rem);
+  }
+  .card {
+    position: relative;
+  }
+
+  /* Define the border-bottom effect on hover */
+  .card:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+  .arrow:hover {
+    cursor: pointer;
+  }
+}
