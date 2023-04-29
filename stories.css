@@ -1,0 +1,355 @@
+html {
+    font-size: 62.5%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "DM Sans";
+  }
+  .top {
+    background-image: url(./assets/stories/mobile/moon-of-appalacia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 31.7em;
+    position: relative;
+    z-index: 1;
+  }
+  .top::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    );
+  }
+  /* Start of the black div on mobile-size */
+  .black_div {
+    padding: 4.8em 2.8em 4.8em 2.9em;
+    background-color: #000000;
+    z-index: 1;
+  }
+  .black_div h5 {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.6em;
+  }
+  .black_div h1 {
+    color: white;
+    font-size: 3.2em;
+    font-weight: 700;
+    line-height: 4rem;
+    letter-spacing: 3.33px;
+    margin-bottom: 1.6rem;
+    width: 31.8rem;
+  }
+  .black_div h4 {
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 2.4rem;
+  }
+  .black_div span {
+    margin-right: 0.9rem;
+    opacity: 0.75;
+  }
+  .black_div p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 2.5rem;
+    opacity: 0.6;
+    margin-bottom: 2.4rem;
+    width: 31.8rem;
+  }
+  .read_story {
+    display: flex;
+  }
+  .read_story h3 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-right: 1.6em;
+  }
+  /* End of the black div on mobile-size */
+  
+  /* Start of the main content on mobile-size */ /* Start of the main content on mobile-size */
+  .section_0 h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  .section_0 h1 {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+  }
+  .box {
+    height: 100%;
+    width: 100%;
+    padding: 21.5em 4.16em 4em 4.16em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  .box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.0001) 0.27%,
+      rgba(0, 0, 0, 0.661222) 100%
+    );
+  }
+  
+  .line {
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .section_0 {
+    width: 100%;
+  }
+  .section_1 {
+    width: 100%;
+  }
+  
+  .read_story2 h3 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+  }
+  /* Start of the section 1 */
+  #Mountains {
+    background-image: url(./assets/stories/mobile/mountains.jpg);
+  }
+  #Cityscapes {
+    background-image: url(./assets/stories/mobile/cityscapes.jpg);
+  }
+  #Voyage {
+    background-image: url(./assets/stories/mobile/18-days-voyage.jpg);
+  }
+  #Architecturals {
+    background-image: url(./assets/stories/mobile/architecturals.jpg);
+  }
+  .read_story2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* End of the section 1 */
+  
+  /* Start of the section 2 */
+  #World_Tour {
+    background-image: url(./assets/stories/mobile/world-tour.jpg);
+  }
+  #Unforeseen_Corners {
+    background-image: url(./assets/stories/mobile/unforeseen-corners.jpg);
+  }
+  #Lion {
+    background-image: url(./assets/stories/mobile/king-on-africa.jpg);
+  }
+  #Trip {
+    background-image: url(./assets/stories/mobile/trip-to-nowhere.jpg);
+  }
+  /* End of the section 2 */
+  
+  /* Start of the section 3 */
+  #rage-of-the-sea {
+    background-image: url(./assets/stories/mobile/rage-of-the-sea.jpg);
+  }
+  #running-free {
+    background-image: url(./assets/stories/mobile/running-free.jpg);
+  }
+  #behind-the-waves {
+    background-image: url(./assets/stories/mobile/behind-the-waves.jpg);
+  }
+  #calm-waters {
+    background-image: url(./assets/stories/mobile/calm-waters.jpg);
+  }
+  /* End of the section 3 */
+  
+  /* Start of the section 4 */
+  #milky-way {
+    background-image: url(./assets/stories/mobile/milky-way.jpg);
+  }
+  #dark-forest {
+    background-image: url(./assets/stories/mobile/dark-forest.jpg);
+  }
+  #somwarpet {
+    background-image: url(./assets/stories/mobile/somwarpet.jpg);
+  }
+  #land-of-dreams {
+    background-image: url(./assets/stories/mobile/land-of-dreams.jpg);
+  }
+  
+  /* End of the section 4 */
+  /* End of the main content on mobile-size */ /* End of the main content on mobile-size */
+  
+  @media (min-width: 768px) {
+    .top {
+      background-image: url(./assets/stories/tablet/moon-of-appalacia.jpg);
+      position: relative;
+      height: 65em;
+    }
+    /* Start of the black div on Tablet-size */
+    .black_div {
+      position: absolute;
+      background-color: transparent;
+      top: 0;
+      margin: 19.4em 34.2em 12.3em 3.9em;
+      padding: 0;
+    }
+    .black_div h5 {
+      margin-bottom: 2.4em;
+    }
+    .black_div h1 {
+      font-size: 4em;
+      line-height: 4.8rem;
+      letter-spacing: 4.17px;
+      margin-bottom: 1.6rem;
+      width: 38.7rem;
+    }
+    .black_div p {
+      width: 38.7rem;
+    }
+    /* End of the black div on Tablet-size */
+    .box {
+      padding: 38em 4.2em 4em 4.2em;
+    }
+    .section_1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    #Mountains {
+      background-image: url(./assets/stories/desktop/mountains.jpg);
+    }
+    #Cityscapes {
+      background-image: url(./assets/stories/desktop/cityscapes.jpg);
+    }
+    #Voyage {
+      background-image: url(./assets/stories/desktop/18-days-voyage.jpg);
+    }
+    #Architecturals {
+      background-image: url(./assets/stories/desktop/architecturals.jpg);
+    }
+  
+    .section_2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    #World_Tour {
+      background-image: url(./assets/stories/desktop/world-tour.jpg);
+    }
+    #Unforeseen_Corners {
+      background-image: url(./assets/stories/desktop/unforeseen-corners.jpg);
+    }
+    #Lion {
+      background-image: url(./assets/stories/desktop/king-on-africa.jpg);
+    }
+    #Trip {
+      background-image: url(./assets/stories/desktop/trip-to-nowhere.jpg);
+    }
+    .section_3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    #rage-of-the-sea {
+      background-image: url(./assets/stories/desktop//rage-of-the-sea.jpg);
+    }
+    #running-free {
+      background-image: url(./assets/stories/desktop//running-free.jpg);
+    }
+    #behind-the-waves {
+      background-image: url(./assets/stories/desktop//behind-the-waves.jpg);
+    }
+    #calm-waters {
+      background-image: url(./assets/stories/desktop//calm-waters.jpg);
+    }
+    .section_4 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    #milky-way {
+      background-image: url(./assets/stories/desktop//milky-way.jpg);
+    }
+    #dark-forest {
+      background-image: url(./assets/stories/desktop//dark-forest.jpg);
+    }
+    #somwarpet {
+      background-image: url(./assets/stories/desktop//somwarpet.jpg);
+    }
+    #land-of-dreams {
+      background-image: url(./assets/stories/desktop//land-of-dreams.jpg);
+    }
+  }
+  @media (min-width: 1440px) {
+    .top {
+      background-image: url(./assets/stories/desktop/moon-of-appalacia.jpg);
+    }
+    .black_div {
+      margin: 19.4em 34.2em 12.3em 11.2em;
+      padding: 0;
+    }
+    .section_1 {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+    .section_2 {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+    .section_3 {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+    .section_4 {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+    .box {
+      position: relative;
+    }
+    .box:hover {
+      cursor: pointer;
+      transform: translateY(-1.6rem);
+      transition: 1s;
+    }
+    .box:hover:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 6px;
+      width: 100%;
+      background-image: linear-gradient(
+        26.57deg,
+        #ffc593 0%,
+        #bc7198 43.29%,
+        #5a77ff 83.33%
+      );
+      transition: 1s;
+    }
+  }
+  
