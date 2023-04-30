@@ -18,9 +18,9 @@
     <img src="assets/shared/desktop/logo.svg" id="logo">
     <a href="index.html" class="list">Home</a>
     <a href="stories.html" class="list">Stories</a>
-    <a href="pricing.html" class="list">Pricing</a>
+    <a href="features.html" class="list">Pricing</a>
     <button class="top-btn">Get an invite</button>
-    <img src="assets/shared/mobile/menu.svg" class="menu nav" id="nmenu" style="display: block;" onclick="navbar() ">
+    <img src="assets/shared/mobile/menu.svg" class="menu nav" id="nmenu" style="visibility: visible;" onclick="navbar() ">
     <img src="assets/shared/mobile/close.svg" class="close nav" id="nclose" onclick="navbar()">
   </header>
   <nav>
@@ -50,83 +50,87 @@
       <h3 id="year">Yearly</h3>
     </div>
 
-    <div class="price-card">
-      <h2>Basic</h2>
+    <div class="price-card" id="card1">
+      <div class="visual"></div>
+      <h5>Basic</h5>
       <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
       <h4>$ <span class="price" id="price-basic">19.00</span></h4>
       <p id="per">per month</p>
-      <button>pick plan</button>
+      <button onclick="changecolor(0)">pick plan</button>
     </div>
-    <div class="price-card">
-      <h2>Pro</h2>
+    <div class="price-card" id="card2">
+      <div class="visual"></div>
+      <h5>Pro</h5>
       <p>More advanced features available. Recommended for photography veterans and professionals.</p>
       <h4>$ <span class="price" id="price-pro">39.00</span></h4>
       <p id="per">per month</p>
-      <button>pick plan</button>
+      <button onclick="changecolor(1)">pick plan</button>
     </div>
-    <div class="price-card">
-      <h2>Business</h2>
+    <div class="price-card" id="card3">
+      <div class="visual"></div>
+      <h5>Business</h5>
       <p>Additional features available such as more detailed metrics. Recommended for business owners.</p>
       <h4>$ <span class="price" id="price-business">99.00</span></h4>
       <p id="per">per month</p>
-      <button>pick plan</button>
+      <button onclick="changecolor(2)">pick plan</button>
     </div>
+
+
     <div class="info">
-      <h2>The Features</h2>
-      <hr>
-      <div>
+      <h5>The Features</h5>
+      <div class="info-list">
         <h3>Unlimited Story Posting</h3>
         <div>
-          <p>Basic</p><p>Pro</p><p>Business</p>
+          <p> <span>Basic</span>  <img src="assets/pricing/desktop/check.svg" alt=""></p><p><span>Pro</span><img src="assets/pricing/desktop/check.svg" alt=""></p><p><span>Business</span>  <img src="assets/pricing/desktop/check.svg" alt=""></p>
         </div>
         <hr>
       </div>
-      <div>
+      <div class="info-list">
         <h3>Unlimited Photo Upload</h3>
         <div>
-          <p>Basic</p><p>Pro</p><p>Business</p>
+          <p><span>Basic</span> <img src="assets/pricing/desktop/check.svg" alt=""></p><p><span>Pro</span><img src="assets/pricing/desktop/check.svg" alt=""></p><p><span>Business</span> <img src="assets/pricing/desktop/check.svg" alt=""></p>
         </div>
         <hr>
       </div>
-      <div>
+      <div class="info-list">
         <h3>Embedding Custom Content</h3>
         <div>
-          <p>Basic</p><p>Pro</p><p>Business</p>
+          <p><span>Basic</span></p><p><span>Pro</span><img src="assets/pricing/desktop/check.svg" alt=""></p><p><span>Business</span> <img src="assets/pricing/desktop/check.svg" alt=""></p>
         </div>
         <hr>
       </div>
-      <div>
+      <div class="info-list">
         <h3>Customize Metadata</h3>
         <div>
-          <p>Basic</p><p>Pro</p><p>Business</p>
+          <p><span>Basic</span></p><p><span>Pro</span><img src="assets/pricing/desktop/check.svg" alt=""></p><p><span>Business</span> <img src="assets/pricing/desktop/check.svg" alt=""></p>
         </div>
         <hr>
       </div>
-      <div>
+      <div class="info-list">
         <h3>Advanced Metrics</h3>
         <div>
-          <p>Basic</p><p>Pro</p><p>Business</p>
+          <p><span>Basic</span></p><p><span>Pro</span></p><p><span>Business</span> <img src="assets/pricing/desktop/check.svg" alt=""></p>
         </div>
         <hr>
       </div>
-      <div>
+      <div class="info-list">
         <h3>Photo Downloads</h3>
         <div>
-          <p>Basic</p><p>Pro</p><p>Business</p>
+          <p><span>Basic</span></p><p><span>Pro</span></p><p><span>Business</span> <img src="assets/pricing/desktop/check.svg" alt=""></p>
         </div>
         <hr>
       </div>
-      <div>
+      <div class="info-list">
         <h3>Search Engine Indexing</h3>
         <div>
-          <p>Basic</p><p>Pro</p><p>Business</p>
+          <p><span>Basic</span></p><p><span>Pro</span></p><p><span>Business</span> <img src="assets/pricing/desktop/check.svg" alt=""></p>
         </div>
         <hr>
       </div>
-      <div>
+      <div class="info-list">
         <h3>Custom Analytics</h3>
         <div>
-          <p>Basic</p><p>Pro</p><p>Business</p>
+          <p><span>Basic</span></p><p> <span>Pro</span></p><p><span>Business</span> <img src="assets/pricing/desktop/check.svg" alt=""></p>
         </div>
         <hr>
       </div>     

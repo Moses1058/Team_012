@@ -30,6 +30,9 @@ nav{
     flex-direction: column;
     text-align: center;
 }
+.navbar{
+    transform: all 2s ease;;
+}
 nav button{
     border: 0;
     margin-left: auto;
@@ -175,8 +178,7 @@ h3{
     transition: 0.5s;
     color: #000000;
 }
-
-h3:after {
+.bottom-section h3:after{
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -190,7 +192,25 @@ h3:after {
     width: 0;
 }
 
-h3:hover:after{
+.bottom-section h3:hover:after{
+    width: 80%; 
+    left: 0; 
+}
+footer h3:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    left: 40%;
+    background: #fff;
+    transform-origin: center;
+    transition: 0.5s;
+    width: 0;
+}
+
+footer h3:hover:after{
     width: 80%; 
     left: 0; 
 }
