@@ -5,9 +5,10 @@ html{
     height: 69.4rem;
     display: flex;
     flex-direction: column;
+    margin-bottom: 11.6rem;
 }
 .top-section img{
-    height: 29.4rem;
+    max-height: 40rem;
 }
 .top-section div{
     height: 22.8rem;
@@ -75,7 +76,7 @@ html{
     
 }
  
-.price-card{
+#card1, #card2, #card3{
     position: relative;
     height: 40.7rem;
     width: 31.8rem;
@@ -266,8 +267,12 @@ html{
     display: flex;
     justify-content: space-between;
 }
-.info-list p{
-    margin-right: 4.7rem;
+.info-list div p{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.price-inf{
     margin-top: 1.6rem;
     display: flex;
     flex-direction: column;
@@ -297,8 +302,187 @@ p span{
     opacity: 0.2;
     margin: 2.4rem 0;
 }
+.prc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media (min-width:768px){
+    .top-section{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        
+    }
+    .top-section img{
+       display: none;
+    }
+    .top-section div{
+        justify-content: center;
+        width: 100%;
+        height: 49rem;
+        background-image: url(assets/pricing/tablet/hero.jpg);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .card-priciing h1{
+        margin-top: 10rem;
+    }
+    .card-priciing p{
+        max-width: 38.7rem;
+    }
+    .selection{
+        margin-bottom: 5rem;
+    }
+    #card1, #card2, #card3{
+        position: relative;
+        width: 68.9rem;
+        height: 27rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+   
+    .price-card h5{
+        text-align: left;
+        order: -1;
+        margin-top: -6rem ;
+        margin-left: 4rem;
+        top: 0;
+    }
+    .price-inf{
+        width: 27rem;
+        position: absolute;
+        left: 4rem;
+        top: 6rem;
+        order: 1;
+    }
+    .price-card p{
+        text-align: left;
+    }
+    #per1, #per2, #per3{
+        text-align: right;
+    }
+    .price-card button{
+        width: 27rem;
+        margin-top: 7.2rem;
+        margin-left: 4rem;
+        order: 2;
+        margin-bottom: 5rem;
+    }
+    .prc{
+        margin-right: 4rem;
+        margin-top: 1.5rem;
+        order: -1;
+        align-items: end;
+    }
+    .visual{
+        left: 0;
+        height: 100%;
+        width: 6px;
+        position: absolute;
+        
+    }
+    .info{
+        display: none;
+    }
+    .info2{
+        display: block;
+    }
+    .main-title{
+        display: flex;
+        align-items: center;
+    }
+    .info2 h1{
+        margin: 6.4rem auto;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+
+        /* identical to box height, or 120% */
+        text-align: center;
+        letter-spacing: 4.16667px;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    .product{
+        width: 68.9rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    .product span{
+        text-transform: uppercase;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 2px;
+
+        color: #000000;
+        margin-bottom: 2.3rem;
+    }
+    .title{
+        width: 33rem;
+        padding-left: 4rem;
+    }
+    .product :nth-child(3){
+        margin-left: -4rem;
+    }
+    .product :nth-child(4){
+        margin-left: -6rem;
+    }
+    .suggest{
+        display: flex;
+        flex-direction: column;
+        width: 68.9rem;
+    }
+    .suggest h3{
+        padding-left: 4rem;
+        padding-top: 2.3rem;
+        padding-bottom: 2.3rem;
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 1fr;
+        border-bottom: 1px solid #DFDFDF;
+    }
+    .suggest p{
+        width: 35rem;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+
+        /* identical to box height */
+        letter-spacing: 2px;
+
+        color: #000000;
+    }
+    #check1{
+        margin-left: 2.3rem;
+    }
+    #check2{
+        margin-left: 7.3rem;
+    }
+    #check3{
+        margin-right: 4rem;
+    }
+      
+    .busines{
+        grid-column: 4;
+    }
+    .busines-pro{
+        grid-column: 3;
+    }
+    
     .bottom-section{
         flex-direction: row;
         height: 28rem;
@@ -319,6 +503,91 @@ p span{
     }
 }
 @media (min-width:1440px){
+    .top-section div{
+        justify-content: center;
+        width: 100%;
+        height: 49rem;
+        background-image: url(assets/pricing/desktop/hero.jpg);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .choosen{
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        display: flex;
+        flex-direction: row;
+        height: 35rem;
+        align-items: center;
+        
+    }
+    #card1, #card2, #card3{
+        margin-right: 3rem;
+        position: relative;
+        width: 35rem;
+        height: 40.7rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .info2{
+        width: 73.1rem;
+    }
+    .prc{
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        order: 1;
+        margin-top: 0;
+    }
+    #per1, #per2, #per3{
+        text-align: center;
+    }
+    .price-card h5{
+        margin-left: 0;
+        margin-top: 5.6rem;
+    }
+    .price-card button{
+        margin: 0;
+    }
+    .price-inf{
+        height: 7.5rem;
+        width: auto;
+        left: 0;
+        top: 0;
+        position: relative;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.06rem;
+        /* or 167% */
+        text-align: center;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.6;
+    }
+    .price-card p{
+        text-align: center;
+    }
+    .visual{
+        width: 100%;
+        height: 6px;
+    }
+    .info{
+        display: none;
+    }
+    .card-priciing h1{
+        margin-left: 11.2rem ;
+        font-size: 4rem;
+    }
+    .card-priciing p{
+        margin-left: 11.2rem ;
+    }
     .bottom-section{
         background-image: url(assets/shared/desktop/bg-beta.jpg);
     }
