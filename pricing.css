@@ -97,7 +97,7 @@ html{
     #5a77ff 83.33%);
 }
 .price-card h5{
-    margin-top: 5.6rem;
+    margin-top: 2.3rem;
     margin-bottom: 1.8rem;
     font-family: 'DM Sans';
     font-style: normal;
@@ -109,6 +109,9 @@ html{
     text-align: center;
 
     color: #000000;
+}
+.info2{
+    display: none;
 }
 .price-card p{
     width: 27.5rem;
