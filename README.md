@@ -1,3 +1,5 @@
+live: https://moses1058.github.io/Team_012/
+
 # Frontend Mentor - Photosnap Website
 
 ![Design preview for the Photosnap Website coding challenge](./preview.jpg)
