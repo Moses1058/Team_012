@@ -7,6 +7,9 @@ body {
   color: #ffffff;
   font-weight: 400;
 }
+p {
+  line-height: 2.5rem;
+}
 main img {
   display: block;
   width: 100%;
@@ -96,6 +99,10 @@ h2 {
   height: 0.1rem;
   opacity: 0.25;
   background: #ffffff;
+  margin: 1.6rem 0 2rem;
+}
+.card h2 {
+  padding-bottom: 0.9rem;
 }
 .read-story {
   display: flex;
@@ -218,9 +225,12 @@ h2 {
     padding: 12rem 16.5rem;
     align-items: center;
   }
+
+  /* define hover effect  */
   .card:hover {
     cursor: pointer;
     transform: translateY(-1.6rem);
+    transition: 0.5s;
   }
   .card {
     position: relative;
@@ -228,6 +238,7 @@ h2 {
 
   /* Define the border-bottom effect on hover */
   .card:hover:after {
+    transition: 0.5s;
     content: "";
     position: absolute;
     bottom: 0;
@@ -243,5 +254,27 @@ h2 {
   }
   .arrow:hover {
     cursor: pointer;
+  }
+  .arrow-p {
+    position: relative;
+  }
+  .arrow-p:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    background: #fff;
+    transform-origin: center;
+    transition: 0.5s;
+    width: 0;
+  }
+  .arrow-p:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .second:after {
+    background: black;
   }
 }
