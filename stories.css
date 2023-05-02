@@ -232,7 +232,7 @@ html {
     }
     /* End of the black div on Tablet-size */
     .box {
-      padding: 38em 4.2em 4em 4.2em;
+      padding: 35em 4.2em 4em 4.2em;
     }
     .section_1 {
       display: grid;
@@ -351,5 +351,6 @@ html {
       );
       transition: 1s;
     }
+    
   }
   
