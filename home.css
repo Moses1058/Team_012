@@ -206,6 +206,12 @@ h2 {
   .dscr p {
     padding-bottom: 8rem;
   }
+  .card {
+    max-height: 50rem;
+  }
+  .description p {
+    max-width: 45.7rem;
+  }
 }
 
 /* Dekstop dimensions */
@@ -225,6 +231,9 @@ h2 {
     padding: 12rem 16.5rem;
     align-items: center;
   }
+  .description p {
+    max-width: 35rem;
+  }
 
   /* define hover effect  */
   .card:hover {
@@ -234,6 +243,10 @@ h2 {
   }
   .card {
     position: relative;
+    height: 100%;
+  }
+  .card h2 {
+    padding-top: 36.1rem;
   }
 
   /* Define the border-bottom effect on hover */
@@ -276,5 +289,12 @@ h2 {
   }
   .second:after {
     background: black;
+  }
+  .up {
+    margin-bottom: 3rem;
+  }
+  .description {
+    gap: 3rem;
+    justify-content: center;
   }
 }
