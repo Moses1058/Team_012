@@ -206,9 +206,7 @@ h2 {
   .dscr p {
     padding-bottom: 8rem;
   }
-  .card {
-    max-height: 50rem;
-  }
+
   .description p {
     max-width: 45.7rem;
   }
@@ -243,10 +241,10 @@ h2 {
   }
   .card {
     position: relative;
-    height: 100%;
+    box-sizing: border-box;
   }
   .card h2 {
-    padding-top: 36.1rem;
+    padding-top: 10.8rem;
   }
 
   /* Define the border-bottom effect on hover */
